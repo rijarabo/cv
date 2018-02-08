@@ -22,7 +22,7 @@
 
 $('#showcv').click(function(){
   $('.cv').attr('display','block');
-};
+});
 
 // HIDE/SHOW
 
