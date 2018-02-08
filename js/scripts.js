@@ -21,7 +21,7 @@
 //});
 
 $('#showcv').click(function(){
-  $('.cv').css('visibility','visible');
+  $('.cv').attr('display','block');
 };
 
 // HIDE/SHOW
