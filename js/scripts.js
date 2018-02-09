@@ -20,8 +20,36 @@
 //  });
 //});
 
-$('#showcv').click(function(){
-  $('.cv').attr('display','block');
+expand
+
+$(document).ready(function(){
+  $('#expand').click(function(){
+    $('#showhideeducation').show(1000);
+    $('#showhideps').show(1000);
+    $('#showhideskills').show(1000);
+  });
+});
+
+$(document).ready(function(){
+  $('#collapse').click(function(){
+    $('#showhideeducation').hide(1000);
+    $('#showhideps').hide(1000);
+    $('#showhideskills').hide(1000);
+  });
+});
+
+$(document).ready(function(){
+  $('#about').click(function(){
+    $('#showhideabout').show(1000);
+  });
+});
+
+$(document).ready(function(){
+  $('#showcv').click(function(){
+    $('#educ').show(1000);
+    $('#ps').show(1000);
+    $('#skills').show(1000);
+  });
 });
 
 // HIDE/SHOW
@@ -131,6 +159,7 @@ $('#fontchangebutton').click(changefont)
 // The max is set to 50px, the min is set by min font in the user's style sheet
 
 function getSizeText() {
+
   sizeText = $('body').css('font-size');
   sizeText = parseInt(sizeText, 10);
   $( '#font-size' ).text( sizeText );
